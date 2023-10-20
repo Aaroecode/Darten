@@ -1,0 +1,32 @@
+10/08/2023 20:56:42 - ERROR - GLOBAL -   Unable to read configuration file
+ 'Credentials'
+10/08/2023 20:56:42 - WARNING - GLOBAL -   Creating new config file
+10/08/2023 20:56:42 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.14:8000
+10/08/2023 20:56:42 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+10/08/2023 20:56:42 - INFO - werkzeug -    * Restarting with stat
+10/08/2023 20:56:42 - WARNING - werkzeug -    * Debugger is active!
+10/08/2023 20:56:42 - INFO - werkzeug -    * Debugger PIN: 527-191-868
+10/08/2023 20:56:51 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\NIU_centralised\\app\\configuration\\config.py', reloading
+10/08/2023 20:56:51 - INFO - werkzeug -    * Restarting with stat
+10/08/2023 20:56:51 - WARNING - werkzeug -    * Debugger is active!
+10/08/2023 20:56:51 - INFO - werkzeug -    * Debugger PIN: 527-191-868
+10/08/2023 20:57:02 - ERROR - GLOBAL -   Unable to read configuration file
+ 'Credentials'
+10/08/2023 20:57:02 - WARNING - GLOBAL -   Creating new config file
+10/08/2023 20:57:35 - ERROR - GLOBAL -   Unable to read configuration file
+ 'Credentials'
+10/08/2023 20:57:35 - WARNING - GLOBAL -   Creating new config file
+10/08/2023 20:57:35 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.14:8000
+10/08/2023 20:57:35 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+10/08/2023 20:57:35 - INFO - werkzeug -    * Restarting with stat
+10/08/2023 20:57:35 - WARNING - werkzeug -    * Debugger is active!
+10/08/2023 20:57:35 - INFO - werkzeug -    * Debugger PIN: 527-191-868
+10/08/2023 20:58:03 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\NIU_centralised\\app\\controller\\main.py', reloading
+10/08/2023 20:58:03 - INFO - werkzeug -    * Restarting with stat
+10/08/2023 20:58:03 - WARNING - werkzeug -    * Debugger is active!
+10/08/2023 20:58:03 - INFO - werkzeug -    * Debugger PIN: 527-191-868
+10/08/2023 22:42:50 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\NIU_centralised\\app\\utility\\permission.py', reloading
+10/08/2023 22:42:50 - INFO - werkzeug -    * Restarting with stat
+10/08/2023 22:45:17 - INFO - werkzeug -    * Restarting with stat

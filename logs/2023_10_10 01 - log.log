@@ -1,0 +1,14 @@
+10/10/2023 01:20:44 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.7:8000
+10/10/2023 01:20:44 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+10/10/2023 01:20:44 - INFO - werkzeug -    * Restarting with stat
+10/10/2023 01:20:45 - WARNING - werkzeug -    * Debugger is active!
+10/10/2023 01:20:45 - INFO - werkzeug -    * Debugger PIN: 527-191-868
+10/10/2023 01:23:04 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\NIU_centralised\\app\\utility\\data_manager.py', reloading
+10/10/2023 01:23:04 - INFO - werkzeug -    * Restarting with stat
+10/10/2023 01:27:41 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.7:8000
+10/10/2023 01:27:41 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+10/10/2023 01:27:41 - INFO - werkzeug -    * Restarting with stat
+10/10/2023 01:27:42 - WARNING - werkzeug -    * Debugger is active!
+10/10/2023 01:27:42 - INFO - werkzeug -    * Debugger PIN: 527-191-868

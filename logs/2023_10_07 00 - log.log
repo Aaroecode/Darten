@@ -1,0 +1,6 @@
+10/07/2023 00:09:12 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://192.168.1.14:8000
+10/07/2023 00:09:12 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+10/07/2023 00:09:12 - INFO - werkzeug -    * Restarting with stat
+10/07/2023 00:09:13 - WARNING - werkzeug -    * Debugger is active!
+10/07/2023 00:09:13 - INFO - werkzeug -    * Debugger PIN: 527-191-868
