@@ -3,7 +3,7 @@ from typing import Union
 from datetime import datetime
 
 
-def get_logger(name: Union[str, None] = "global", filepath: Union[str, None] = str(os.path.join(os.getcwd(), "logs")), level: Union[logging.DEBUG, logging.INFO, logging.WARNING, None] = logging.DEBUG):
+def get_logger(name: Union[str, None] = "global", filepath: Union[str, None] = str(os.path.join(os.getcwd(), "logs")), level = logging.DEBUG):
 
 
     if not os.path.exists(filepath):

@@ -1,0 +1,156 @@
+02/01/2024 17:27:17 - DEBUG - google.auth.transport.requests -   Making request: POST https://oauth2.googleapis.com/token
+02/01/2024 17:27:17 - DEBUG - urllib3.connectionpool -   Starting new HTTPS connection (1): oauth2.googleapis.com:443
+02/01/2024 17:27:18 - DEBUG - urllib3.connectionpool -   https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+02/01/2024 17:27:18 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:27:18 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:27:18 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:27:18 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:27:20 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:27:21 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:27:21 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:27:44 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:27:44] "[35m[1mPOST /qr/add HTTP/1.1[0m" 500 -
+02/01/2024 17:28:03 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:28:03] "[35m[1mPOST /qr/add HTTP/1.1[0m" 500 -
+02/01/2024 17:28:40 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\Darten\\app\\config\\appConfig.py', reloading
+02/01/2024 17:28:40 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:28:49 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:28:49 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:28:49 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:29:11 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\Darten\\app\\controller\\main.py', reloading
+02/01/2024 17:29:11 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:29:14 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:29:14 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:29:14 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:29:14 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:29:14] "[35m[1mPOST /qr/add HTTP/1.1[0m" 500 -
+02/01/2024 17:29:37 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\Darten\\app\\controller\\main.py', reloading
+02/01/2024 17:29:37 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:30:33 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:30:34 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:30:34 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:30:34 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:30:37 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:30:38 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:30:38 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:30:38 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:30:38] "[35m[1mPOST /qr/add HTTP/1.1[0m" 500 -
+02/01/2024 17:31:17 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\Darten\\app\\controller\\main.py', reloading
+02/01/2024 17:31:17 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:31:20 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:31:21 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:31:21 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:31:21 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 1001, Name: sdvdsvdsv, Course: sfbsvgfbgs, Contact: 1234567894
+02/01/2024 17:31:32 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:31:33 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 11, Name: dfgvdfsds, Course: dfdvdfv, Contact: 1234567894
+02/01/2024 17:31:34 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:31:35 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 12, Name: xdjvhbcdjvsdvsdv, Course: aksbhdcdsuf, Contact: 1234567894
+02/01/2024 17:31:36 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:31:37 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:31:37] "POST /qr/add HTTP/1.1" 200 -
+02/01/2024 17:32:05 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\Darten\\app\\utilities\\emailClient.py', reloading
+02/01/2024 17:32:05 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:32:08 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:32:09 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:32:09 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:32:17 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:32:18 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:32:18 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:32:18 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:32:20 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:32:20 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:32:20 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:32:20 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:32:20] "[35m[1mPOST /qr/add HTTP/1.1[0m" 208 -
+02/01/2024 17:32:34 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:32:34 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:32:34 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:32:34 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:32:37 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:32:37 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:32:37 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:32:45 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 1001, Name: sdvdsvdsv, Course: sfbsvgfbgs, Contact: 1234567894
+02/01/2024 17:32:46 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:32:46 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 11, Name: dfgvdfsds, Course: dfdvdfv, Contact: 1234567894
+02/01/2024 17:32:46 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:32:47 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 12, Name: xdjvhbcdjvsdvsdv, Course: aksbhdcdsuf, Contact: 1234567894
+02/01/2024 17:32:47 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:32:48 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:32:48] "POST /qr/add HTTP/1.1" 200 -
+02/01/2024 17:33:11 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\Darten\\app\\controller\\main.py', reloading
+02/01/2024 17:33:11 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:33:35 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:33:35 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:33:35 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:33:35 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:33:38 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:33:38 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:33:38 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:33:38 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:33:38] "[35m[1mPOST /qr/add HTTP/1.1[0m" 500 -
+02/01/2024 17:34:20 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:34:21 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:34:21 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:34:21 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:34:23 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:34:24 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:34:24 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:34:28 - DEBUG - asyncio -   Using proactor: IocpProactor
+02/01/2024 17:34:28 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 1001, Name: sdvdsvdsv, Course: sfbsvgfbgs, Contact: 1234567894
+02/01/2024 17:34:30 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:34:30] "[35m[1mPOST /qr/add HTTP/1.1[0m" 500 -
+02/01/2024 17:35:37 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\Darten\\app\\utilities\\emailClient.py', reloading
+02/01/2024 17:35:37 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:35:52 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:35:52 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:35:52 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:35:52 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:35:55 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:35:55 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:35:55 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:36:05 - DEBUG - asyncio -   Using proactor: IocpProactor
+02/01/2024 17:36:05 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 1001, Name: sdvdsvdsv, Course: sfbsvgfbgs, Contact: 1234567894
+02/01/2024 17:36:07 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:36:08 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 11, Name: dfgvdfsds, Course: dfdvdfv, Contact: 1234567894
+02/01/2024 17:36:10 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:36:10 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 12, Name: xdjvhbcdjvsdvsdv, Course: aksbhdcdsuf, Contact: 1234567894
+02/01/2024 17:36:12 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:36:12 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:36:12] "POST /qr/add HTTP/1.1" 200 -
+02/01/2024 17:36:37 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:36:38 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:36:38 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:36:38 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:36:40 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:36:40 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:36:40 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:36:51 - DEBUG - asyncio -   Using proactor: IocpProactor
+02/01/2024 17:36:51 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 1001, Name: sdvdsvdsv, Course: sfbsvgfbgs, Contact: 1234567894
+02/01/2024 17:36:53 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:36:54 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 11, Name: dfgvdfsds, Course: dfdvdfv, Contact: 1234567894
+02/01/2024 17:36:56 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:36:56 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 12, Name: xdjvhbcdjvsdvsdv, Course: aksbhdcdsuf, Contact: 1234567894
+02/01/2024 17:37:00 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:37:01 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:37:01] "POST /qr/add HTTP/1.1" 200 -
+02/01/2024 17:38:52 - INFO - werkzeug -    * Detected change in 'c:\\Users\\Aaroegun\\Desktop\\Darten\\test.py', reloading
+02/01/2024 17:38:52 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:38:56 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:38:56 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:38:56 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:44:17 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:44:17 - INFO - werkzeug -   [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:2000
+02/01/2024 17:44:17 - INFO - werkzeug -   [33mPress CTRL+C to quit[0m
+02/01/2024 17:44:17 - INFO - werkzeug -    * Restarting with stat
+02/01/2024 17:44:20 - INFO - googleapiclient.discovery_cache -   file_cache is only supported with oauth2client<4.0.0
+02/01/2024 17:44:20 - WARNING - werkzeug -    * Debugger is active!
+02/01/2024 17:44:20 - INFO - werkzeug -    * Debugger PIN: 113-698-683
+02/01/2024 17:44:20 - DEBUG - asyncio -   Using proactor: IocpProactor
+02/01/2024 17:44:20 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 1001, Name: sdvdsvdsv, Course: sfbsvgfbgs, Contact: 1234567894
+02/01/2024 17:44:23 - INFO - Mail Client -   Mail Sent
+02/01/2024 17:44:23 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:44:25 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 11, Name: dfgvdfsds, Course: dfdvdfv, Contact: 1234567894
+02/01/2024 17:44:26 - INFO - Mail Client -   Mail Sent
+02/01/2024 17:44:26 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:44:27 - INFO - app -   User Registered with Transaction id: pay_NUuaIbjRBMVU6B, Event Name: Credenza, Team Name: dovihndihls, Team ID: 363677, Member ID: 12, Name: xdjvhbcdjvsdvsdv, Course: aksbhdcdsuf, Contact: 1234567894
+02/01/2024 17:44:28 - INFO - Mail Client -   Mail Sent
+02/01/2024 17:44:28 - DEBUG - googleapiclient.discovery -   URL being requested: POST https://sheets.googleapis.com/v4/spreadsheets/1euuUXN28zBf8ZolLKXkzsriMosTyiXkziknUzjNIFOI/values/Sheet1%21A1:append?valueInputOption=RAW&alt=json
+02/01/2024 17:44:29 - INFO - werkzeug -   127.0.0.1 - - [01/Feb/2024 17:44:29] "POST /qr/add HTTP/1.1" 200 -

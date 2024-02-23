@@ -1,10 +1,9 @@
 import sqlite3, os
 from typing import Any
-from app.utilities import logging
+from app.utilities.clogging import get_logger
 from typing import Union
-import logging
 class sqldb():
-    def __init__(self, path: str = os.path.join(os.getcwd(), 'app', 'database')):
+    def __init__(self, path: str = os.path.join(os.getcwd(), 'app', 'database', 'main.db')):
         """Initializes Databse Class
 
         Args:
@@ -13,31 +12,29 @@ class sqldb():
         Raises:
             ConnectionError: When connection can not be established
         """
-        self.connection = sqlite3.connect(path)
+        self.connection = sqlite3.connect(path, check_same_thread=False)
         self.connection.text_factory = str
         self.cursor = self.connection.cursor()
-        if self.connection == "":
+        if self.cursor:
             print("Connected to SQL Database")
         else:
-            raise ConnectionError
-        self.logger = logging.get_logger('SQL')
-        if isinstance(self.logger, logging.Logger):
-            print("SQL Logger initiated successfully")
+            raise ConnectionError(path)
+        self.logger = get_logger('SQL')
+
+        print("SQL Logger initiated successfully")
     
     def all_tables(self):
         """ Lists all the tables present in database
 
-        Raises:
-            ConnectionError: When no Connection if Found
 
         Returns:
             _type_: iterable of object tables
         """
-        if self.connect!="":
-            raise ConnectionError
-        else:
-            sql_cmd = "SELECT name FROM sqlite_master WHERE type='table';"
-            return [tables[0] for tables in self.cursor(sql_cmd)]
+
+        sql_cmd = "SELECT name FROM sqlite_master WHERE type='table';"
+        self.cursor.execute(sql_cmd)
+        tables = self.cursor.fetchall()
+        return [tables[0] for tables in tables]
 
     
     def add(self, table: str, data: Union[str, list, tuple, dict], createTable: bool = False) -> Union[str, bool]:
@@ -56,31 +53,36 @@ class sqldb():
         """
         tables = self.all_tables()
         if table not in tables and createTable is False:
-            raise TableNotFoundException
+            raise TableNotFoundException(table)
         elif table not in tables:
             keys = data[0].keys()
-            query = "CREATE TABLE {TABLE} ({column})"
-            keys = ", ".join("str "+k for k in keys)
+            query = "CREATE TABLE `{TABLE}` ({column})"
+            keys = ", ".join(k+" TEXT" for k in keys)
             query = query.format(TABLE=table, column=keys)
+
             self.cursor.execute(query)
 
         if isinstance(data[0], dict):
             for element in data:
                 keys = element.keys()
-                values = element.values()
-                query = 'INSERT INTO {TABLE} ({KEYS}) VALUES ({VALUES})'
+                values = tuple(element.values())
+                query = 'INSERT INTO `{TABLE}` ({KEYS}) VALUES ({VALUES})'
                 keys = ", ".join(k for k in keys)
-                values = ",".join("?" for v in values)
-                self.cursor.execute(query.format(TABLE=table, KEYS=keys), values)
+                param = ",".join("?" for v in values)
+                query = query.format(TABLE=table, KEYS=keys, VALUES = param)
+                self.cursor.execute(query, values)
         elif isinstance(data[0], list) or isinstance(data[0], tuple):
             for element in data:
-                query = 'INSERT INTO {TABLE} VALUES ({VALUES})'
-                values = ",".join("?" for e in element)
-                self.cursor.execute(query.format(table), values)
+                query = 'INSERT INTO `{TABLE}` VALUES ({VALUES})'
+                param = ",".join("?" for e in element)
+                query = query.format(TABLE=table, VALUES=param)
+                self.cursor.execute(query, values)
         elif isinstance(data[0], str):
-            query = 'INSERT INTO {TABLE} VALUES ({VALUES})'
-            values = ",".join("?" for e in data)
+            query = 'INSERT INTO `{TABLE}` VALUES ({VALUES})'
+            param = ",".join("?" for e in data)
+            query = query.format(TABLE=table, VALUES = param )
             self.cursor.execute(query, values)
+        self.connection.commit()
 
     def remove(self, table: str, fieldName: str, data: str):
         """Removes Data from table
@@ -95,9 +97,10 @@ class sqldb():
         """
         tables = self.all_tables()
         if table not in tables:
-            raise TableNotFoundException
-        query = f"DELETE FROM {table} WHERE {fieldName} = '{data}'"
+            raise TableNotFoundException(table)
+        query = f"DELETE FROM `{table}` WHERE {fieldName}='{data}'"
         self.cursor.execute(query)
+        self.connection.commit()
     
     def find(self, table: str,  fieldName: Union[str, None], data: Union[str, list, tuple, None], fetches: str = "*") -> list:
         """Finds Data in Tables
@@ -111,18 +114,32 @@ class sqldb():
         Returns:
             list: List of fetched data
         """
-        query = "SELECT {fetches} FROM {table} WHERE {fieldName} = {data}"
-        query = query.format(fetches = fetches, table = table, fieldName = fieldName)
+        query = "SELECT {fetches} FROM `{table}` WHERE {fieldName} = {data}"
         fetched_data = []
         if isinstance(data, list) or isinstance(data, tuple):
             for element in data:
-                self.cursor.execute(query.format(data=element))
+                try:
+                    self.cursor.execute(query.format(fetches = fetches, table = table, fieldName = fieldName,data=element))
+                    result = self.cursor.fetchall()
+                    fetched_data.append(d for d in result)
+                except:
+                    pass
+        elif isinstance(data, str):
+            try:
+                self.cursor.execute(query.format(fetches = fetches, table = table, fieldName = fieldName,data=data))
                 result = self.cursor.fetchall()
                 fetched_data.append(d for d in result)
-        elif isinstance(data, str):
-            self.cursor.execute(query.format(data=data))
-            result = self.cursor.fetchall()
-            fetched_data.append(d for d in result)
+            except:
+                pass
+        if fieldName == None and data == None:
+            try:
+                query = f"SELECT {fetches} From {table}"
+                self.cursor.execute(query)
+                result = self.cursor.fetchall()
+                fetched_data.append(d for d in result)
+            except:
+                pass
+
         return data
 
 
@@ -132,9 +149,9 @@ class sqldb():
         return ("sqlbd(Path to the file containing the Database)")
     
 class TableNotFoundException(Exception):
-    def __init__(self, table, message="SQL Table {table} not found"):
-        self.table = table
-        self.message = message.format(table=self.table)
+    def __init__(self, table, message="SQL Table {Table} not found"):
+        self.message = message
+        self.message = self.message.format(Table=table)
         super().__init__(message)
 
 class InvalidHeader(Exception):
@@ -144,7 +161,7 @@ class InvalidHeader(Exception):
         super().__init__(message)
 
 class ConnectionError(Exception):
-    def __init__(self, databse, message = "Could not connect to database {database}") -> None:
-        self.database = databse
-        self.message = message.format(databse=self.database)
+    def __init__(self, database, message = "Could not connect to database {database}") -> None:
+        self.database = database
+        self.message = message.format(database=self.database)
         super().__init__(message)
